@@ -1,0 +1,55 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: var(--background-color)
+}
+
+/* COLORS */
+
+:root {
+  --main-color: #231815;
+  --primary-color: #E45302;
+  --firtst-light-color: #F5F5F5;
+  --second-light-color: #FFFFFF;
+  --grey-color: #808080;
+  --black-color: #000000;
+  --background-color: #FFFFFD;
+  --dark-color: #1A1A1A;
+  --burger-color: #0D0B26;
+}
+
+/* UTILITIES */
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1240px;
+    margin: 0 18rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .container {
+    max-width: 100%;
+    margin: 0 4.4rem;
+  }
+
+}
+
+@media (max-width: 390px) {
+  .container {
+    max-width: 100%;
+    margin: 0 3.5rem;
+  }
+
+}

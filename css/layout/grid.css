@@ -1,0 +1,43 @@
+/* GRID FOR CARDS */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem 4rem;
+  margin-top: 4rem;
+}
+
+.search-results__container {
+  padding: 6rem 0;
+}
+
+@media (max-width: 1600px) {
+  .grid-container {
+    gap: 3rem 3rem;
+  }
+}
+
+
+@media (max-width: 770px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 5rem;
+  }
+
+  .search-results__container {
+    padding: 5rem 0;
+  }
+}
+
+
+@media (max-width: 390px) {
+  .grid-container {
+
+    gap: 1rem 3rem;
+  }
+
+
+  .search-results__container {
+    padding: 4rem 0;
+  }
+}
