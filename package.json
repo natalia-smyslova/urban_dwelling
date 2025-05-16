@@ -5,7 +5,7 @@
   "homepage": "https://natalia-smyslova.github.io/urban_dwelling",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d src"
+    "deploy": "gh-pages -d ."
   },
   "author": "",
   "license": "ISC",
