@@ -1,0 +1,110 @@
+.card-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  background-color: var(--firtst-light-color);
+}
+
+.card-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 3.1rem;
+  background: rgba(245, 245, 245, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease;
+}
+
+.card:hover .card-details {
+  opacity: 1;
+  visibility: visible;
+}
+
+.product-img {
+  transition: transform 0.3s ease;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card:hover .product-img {
+  transform: scale(1.15);
+}
+
+.btn-action {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+}
+
+.price-info {
+  padding-top: 2rem;
+}
+
+.card-prices {
+  display: flex;
+  gap: 1.6rem;
+  margin-top: 1.2rem;
+}
+
+.card-price {
+  font-size: 2.2rem;
+  color: var(--main-color);
+  font-weight: 700;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.card-price--action {
+  color: var(--primary-color);
+}
+
+.card-price--old {
+  color: var(--grey-color);
+  text-decoration: line-through;
+}
+
+.currency {
+  margin-left: 0.5rem;
+}
+
+
+/* ANIMATION */
+
+.hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    height 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.price-old,
+.promo-btn {
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    height 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+
+/*  MAX WIDTH 390px */
+
+@media (max-width: 390px) {
+  .price-info {
+    padding-top: 1rem;
+  }
+
+  .card-prices {
+    margin-top: 1rem;
+  }
+
+  .card-title{
+    font-size: 1.6rem;
+  }
+
+  .card-details{
+    display: none;
+  }
+}

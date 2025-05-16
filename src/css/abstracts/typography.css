@@ -1,0 +1,66 @@
+/* TYPOGRAPHY */
+
+/* Lato Regular */
+@font-face {
+  font-family: 'Lato';
+  src: url('../../fonts/lato-v24-latin/lato-v24-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Lato Bold */
+@font-face {
+  font-family: 'Lato';
+  src: url('../../fonts/lato-v24-latin/lato-v24-latin-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Roboto Regular */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../fonts/roboto-v47-latin/roboto-v47-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Korataki Regular */
+@font-face {
+  font-family: 'Korataki';
+  src: url('../../fonts/korataki/Korataki.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Inter Regular */
+@font-face {
+  font-family: 'Inter';
+  src: url('../../fonts/inter-v18-latin/inter-v18-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title-1 {
+  font-family: 'Korataki', sans-serif;
+  font-weight: 400;
+  color: var(--main-color);
+  font-size: 4.4rem;
+  margin: 0;
+}
+
+.title-3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: var(--main-color);
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+
+.title-4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: var(--second-light-color);
+  font-size: 1.8rem;
+}
+
